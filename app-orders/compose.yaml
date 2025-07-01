@@ -1,5 +1,5 @@
 services:
-  pg:
+  orders-pg:
     image: bitnami/postgresql:latest
     ports:
       - "5482:5432"
