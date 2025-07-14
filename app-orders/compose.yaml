@@ -8,4 +8,8 @@ services:
       - POSTGRES_PASSWORD=docker
       - POSTGRES_DB=orders
     volumes:
+      - db_orders:/var/lib/postgresql/data
       - ./docker:/docker-entrypoint-initdb.d
+
+volumes:
+  db_orders:
