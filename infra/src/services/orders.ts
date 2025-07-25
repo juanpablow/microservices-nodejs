@@ -2,8 +2,8 @@ import * as aws from "@pulumi/aws";
 import * as awsx from "@pulumi/awsx";
 import * as pulumi from "@pulumi/pulumi";
 
-import { ordersDockerImage } from "../images/orders";
 import { cluster } from "../cluster";
+import { ordersDockerImage } from "../images/orders";
 import { amqpListener } from "./rabbitmq";
 import { appLoadBalancer } from "../load-balancer";
 
